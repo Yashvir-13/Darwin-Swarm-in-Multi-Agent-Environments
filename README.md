@@ -24,7 +24,7 @@ Instead of training with reinforcement learning, a population of small neural po
 
 ## What it does not claim yet
 
-This repo is not yet an open-ended artificial life platform or a full research benchmark suite. It is currently a compact, reproducible study of evolved coordination in one task environment. That narrower claim is still strong, and it is now supported by metrics instead of only anecdotal visuals.
+This repo is not yet an open-ended artificial life platform or a full research benchmark suite. It is currently a compact, reproducible study of evolved coordination in one task environment. 
 
 ## Core idea
 
@@ -99,22 +99,4 @@ Training writes the following artifacts:
 - `logs/training_metrics.csv`
 - `logs/summary.json`
 
-## Key Improvements
 
-This version includes several enhancements over earlier prototypes:
-
-- Seeded evaluation for repeatability
-- Tracked coordination metrics beyond simple rewards
-- Explicit baseline comparisons (random and stationary)
-- Elite-team checkpointing for consistent demonstrations
-- Comprehensive logging and visualization pipeline
-
-## Good next steps
-
-If you want to push this from strong prototype to standout showcase, the best next upgrades are:
-
-1. Add a simple scripted baseline, not just random and still
-2. Save per-generation rollout videos or GIFs
-3. Sweep environment settings such as agent count and `local_ratio`
-4. Add an environment-change experiment to test collapse vs robustness
-5. Graduate to a richer environment like `waterworld` after the analysis pipeline is stable
